@@ -75,6 +75,7 @@ public:
         std::string query = "UPDATE staffstats SET red=red-1 WHERE username='" + username + "';";
         mysql_query(connection, query.c_str());
     }
+
 private:
     MYSQL mysql;
     MYSQL* connection;
