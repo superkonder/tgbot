@@ -74,7 +74,6 @@ public:
         std::string query = "UPDATE staffstats SET yellow=yellow+1 WHERE username='" + username + "';";
         mysql_query(connection, query.c_str());
     }
-
     void deleteYellowCard(const std::string& username) {
         std::string query = "UPDATE staffstats SET yellow=yellow-1 WHERE username='" + username + "';";
         mysql_query(connection, query.c_str());
