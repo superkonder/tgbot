@@ -76,6 +76,7 @@ public:
         mysql_query(connection, query.c_str());
     }
 
+
 private:
     MYSQL mysql;
     MYSQL* connection;
