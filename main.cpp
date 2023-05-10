@@ -288,7 +288,6 @@ private:
             info = mysql->getModeratorInfo(username);
             moderatorsInfo[username] = info;
         }
-
         return info;
     }
     void setModeratorInfo(const std::string& username, ModeratorInfo& info) {
