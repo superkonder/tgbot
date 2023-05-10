@@ -246,7 +246,6 @@ public:
                                                          "/help");
         });
 
-        // Запуск бота
         bot->getApi().sendMessage("@", "Bot has been started.");
         bot->getEvents().poll();
     }
@@ -265,7 +264,6 @@ private:
 
     std::map<std::string, ModeratorInfo> moderatorsInfo;
 
-    // Разделение строки на элементы с помощью указанного разделителя (пробел)
     std::vector<std::string> splitString(const std::string& str, char delimiter) {
         std::vector<std::string> tokens;
         std::string token;
@@ -278,7 +276,6 @@ private:
         return tokens;
     }
 
-    // Получение информации о модераторе из БД или создание новой записи, если он не найден
     ModeratorInfo getOrCreateModeratorInfo(const std::string& username) {
         ModeratorInfo info;
 
