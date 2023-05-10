@@ -291,7 +291,6 @@ private:
 
         return info;
     }
-
     void setModeratorInfo(const std::string& username, ModeratorInfo& info) {
         moderatorsInfo[username] = info;
 
