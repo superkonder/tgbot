@@ -292,7 +292,6 @@ private:
     }
     void setModeratorInfo(const std::string& username, ModeratorInfo& info) {
         moderatorsInfo[username] = info;
-
         std::string query = "UPDATE staffstats SET post='" + info.post + "', yellow=" + std::to_string(info.yellowCards) + ", red=" + std::to_string(info.redCards) + " WHERE username='" + username + "';";
         mysql_query(mysql->connection, query.c_str());
     }
